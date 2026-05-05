@@ -1,0 +1,148 @@
+/* styling our app */
+/* styling has been use to make our html appealing
+ while also making it look good in different screen sizes (Resposive) */
+
+/*global styling*/
+* {
+  box-sizing: border-box;
+}
+
+/*body styling*/
+body {
+  background: #f5f5f5;
+}
+
+/*container styling*/
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+  font-family: sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+/* Card style */
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+  border: 1px solid #ddd;
+}
+
+/* Inputs */
+input, textarea {
+  width: 100%;
+  margin: 10px 0px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Search */
+.search {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+}
+
+/* Project card */
+.project {
+  display: flex;
+  gap: 15px;
+  margin: 15px 0;
+}
+
+.image-placeholder {
+  width: 60px;
+  height: 60px;
+  border: 1px solid #aaa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Responsive */
+
+/* responssive for 768px screens */
+@media (max-width: 768px) {
+
+  .container {
+    padding: 15px;
+  }
+
+  .card {
+    padding: 18px;
+  }
+
+  .project {
+    gap: 12px;
+  }
+
+  .image-placeholder {
+    width: 55px;
+    height: 55px;
+    min-width: 55px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+}
+
+/* responssive for 768px screens */
+@media (max-width:600px){
+  .project { flex-direction: column; }
+}
+
+/* responssive for 480px screens */
+@media (max-width: 480px) {
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .card {
+    padding: 15px;
+    margin: 15px 0;
+  }
+
+  .project {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .image-placeholder {
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
+  }
+
+  .project h3 {
+    font-size: 18px;
+  }
+
+  .project p {
+    font-size: 14px;
+  }
+
+  input, textarea {
+    font-size: 14px;
+  }
+
+  button {
+    width: 100%;
+  }
+}
